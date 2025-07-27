@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db34bb05-d513-4f3c-aff1-c1a1d0726158" name="Changes" comment="" />
+    <list default="true" id="db34bb05-d513-4f3c-aff1-c1a1d0726158" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/lua/client/ISVehicleMechanics.lua" beforeDir="false" afterPath="$PROJECT_DIR$/media/lua/client/ISVehicleMechanics.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/lua/server/server.lua" beforeDir="false" afterPath="$PROJECT_DIR$/media/lua/server/server.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/lua/shared/Translate/EN/IG_UI_EN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/media/lua/shared/Translate/EN/IG_UI_EN.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/lua/shared/shared.lua" beforeDir="false" afterPath="$PROJECT_DIR$/media/lua/shared/shared.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/scripts/vehicles/vehicle_car_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/media/scripts/vehicles/vehicle_car_small.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +44,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/trentsandford/Zomboid/mods/AdvancedVehicleSystems",
@@ -76,7 +84,8 @@
       <workItem from="1753586014090" duration="5000" />
       <workItem from="1753586024374" duration="300000" />
       <workItem from="1753586333432" duration="362000" />
-      <workItem from="1753586803991" duration="12000" />
+      <workItem from="1753586803991" duration="151000" />
+      <workItem from="1753602576955" duration="1517000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -94,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753586689192</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1753586926838</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1753586926838</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,8 +133,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="Updated gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated gitignore" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>
