@@ -2,7 +2,6 @@ local FONT_HGT_SMALL = getTextManager():getFontHeight(UIFont.Small) -- From the 
 
 --- Backup original function
 local _ISVehicleMechanics_doPartContextMenu = ISVehicleMechanics.doPartContextMenu
-
 --- Adding onto existing logic from the original function.
 ---@param part VehiclePart The vehicle part which is right-clicked.
 ---@param x number
@@ -20,7 +19,6 @@ end
 
 --- Backup original function
 local _ISVehicleMechanics_renderPartDetail = ISVehicleMechanics.renderPartDetail
-
 --- Adding onto existing logic from the original function.
 ---@param part VehiclePart The vehicle part information which is rendered when selected.
 function ISVehicleMechanics:renderPartDetail(part)
@@ -47,11 +45,16 @@ function ISVehicleMechanics:renderPartDetail(part)
 
         if part:getInventoryItem() ~= nil then
             local engine = part:getVehicle():getPartById("Engine")
+            local oilLevel = engine:getModData().oilLevel
 
             if engine:getModData().hasCheckedOilLevel == true then
-                self:drawText(getText("IGUI_OilLevel") .. ": " .. round(engine:getModData().oilLevel, 2), x, y, 1, 1, 1, 1)
+                if oilLevel > 10 and oilLevel < 90 then -- Temporary values, need to just later.
+                    self:drawText(getText("IGUI_OilLevel") .. ": " .. math.floor(engine:getModData().oilLevel) .. "% ", x, y, getCore():getGoodHighlitedColor():getR(), getCore():getGoodHighlitedColor():getG(), getCore():getGoodHighlitedColor():getB(), 1)
+                else
+                    self:drawText(getText("IGUI_OilLevel") .. ": " .. math.floor(engine:getModData().oilLevel) .. "% ", x, y, getCore():getBadHighlitedColor():getR(), getCore():getBadHighlitedColor():getG(), getCore():getBadHighlitedColor():getB(), 1)
+                end
             else
-                self:drawText(getText("IGUI_OilLevel") .. ": " .. "?", x, y, 1, 1, 1, 1)
+                self:drawText(getText("IGUI_OilLevel") .. ": " .. "??", x, y, 1, 1, 1, 1)
             end
         end
     end

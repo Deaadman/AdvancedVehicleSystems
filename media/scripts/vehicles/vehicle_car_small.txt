@@ -297,7 +297,8 @@ module Base
             table uninstall
             {
                 time = 100,
-                test = Vehicles.UninstallTest.Dipstick,
+                test = Vehicles.UninstallTest.Default,
+                complete = Vehicles.UninstallComplete.Dipstick,
             }
             lua
             {

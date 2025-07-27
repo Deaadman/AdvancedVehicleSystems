@@ -24,15 +24,7 @@ end
 --- It doesn't just immediately show the oil level again.
 ---@param vehicle BaseVehicle The vehicle in which the dipstick is being removed from.
 ---@param part VehiclePart The part of the vehicle being removed.
----@param chr IsoGameCharacter The character removing the vehicle part.
-function Vehicles.UninstallTest.Dipstick(vehicle, part, chr)
-    local canDo = Vehicles.UninstallTest.Default(vehicle, part, chr);
-
-    if not canDo then
-        return false
-    end
-
-    part:getVehicle():getPartById("Engine"):getModData().hasCheckedOilLevel = false
-
-    return true
+---@param item Item The item used to uninstall the part?
+function Vehicles.UninstallComplete.Dipstick(vehicle, part, item)
+    vehicle:getPartById("Engine"):getModData().hasCheckedOilLevel = false
 end
