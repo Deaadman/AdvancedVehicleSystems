@@ -13,7 +13,7 @@ function ISVehicleMechanics:doPartContextMenu(part, x, y)
 
     if part:getId() == "Dipstick" and part:getInventoryItem() ~= nil then
         option = self.context:addOption(getText("IGUI_CheckOilLevel"), player, ISVehicleMechanics.onCheckOilLevel, part)
-        self:doMenuTooltip(part, option, "takeengineparts");
+        -- self:doMenuTooltip(part, option, "takeengineparts"); -- This was causing the items required to take engine parts when wanting to check the oil level.
     end
 end
 
@@ -76,7 +76,7 @@ function ISVehicleMechanics.onCheckOilLevel(player, part)
 		engineCover = doorPart
 	end
 
-    local engine = part:getVehicle():getPartById("Engine")
+    local time = 50;
 
 	if engineCover then
 		-- The hood is magically unlocked if any door/window is broken/open/uninstalled.
@@ -84,10 +84,10 @@ function ISVehicleMechanics.onCheckOilLevel(player, part)
 		if engineCover:getDoor():isLocked() and VehicleUtils.RequiredKeyNotFound(part, player) then
 			ISTimedActionQueue.add(ISUnlockVehicleDoor:new(player, engineCover))
 		end
-		ISTimedActionQueue.add(ISOpenVehicleDoor:new(player, part:getVehicle(), engineCover))
-		engine:getModData().hasCheckedOilLevel = true
+        ISTimedActionQueue.add(ISOpenVehicleDoor:new(player, part:getVehicle(), engineCover))
+		ISTimedActionQueue.add(ISCheckOil:new(player, part, time))
 		ISTimedActionQueue.add(ISCloseVehicleDoor:new(player, part:getVehicle(), engineCover))
-	else
-		engine:getModData().hasCheckedOilLevel = true
+    else
+	    ISTimedActionQueue.add(ISCheckOil:new(player, part, time))
 	end
 end

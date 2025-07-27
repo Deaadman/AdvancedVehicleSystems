@@ -1,5 +1,6 @@
 IGUI_EN = {
     IGUI_CheckOilLevel = "Check Oil Level",
+    IGUI_CheckingOilLevel = "Checking Oil Level...",
     IGUI_OilLevel = "Oil Level",
     IGUI_VehiclePartDipstick = "Dipstick",
 }

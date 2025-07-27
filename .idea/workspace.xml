@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db34bb05-d513-4f3c-aff1-c1a1d0726158" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/media/lua/client/ISCheckOil.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/media/lua/client/ISVehicleMechanics.lua" beforeDir="false" afterPath="$PROJECT_DIR$/media/lua/client/ISVehicleMechanics.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/lua/server/server.lua" beforeDir="false" afterPath="$PROJECT_DIR$/media/lua/server/server.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/scripts/vehicles/vehicle_car_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/media/scripts/vehicles/vehicle_car_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/lua/shared/Translate/EN/IG_UI_EN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/media/lua/shared/Translate/EN/IG_UI_EN.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +34,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="30R5K9A7p0niKVvhViVJoUdYbTl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -83,7 +86,7 @@
       <workItem from="1753586024374" duration="300000" />
       <workItem from="1753586333432" duration="362000" />
       <workItem from="1753586803991" duration="151000" />
-      <workItem from="1753602576955" duration="4090000" />
+      <workItem from="1753602576955" duration="5207000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -117,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753604760015</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed an issue with the oil level disappearing on right-clicking the dip stick.">
+      <option name="closed" value="true" />
+      <created>1753606914189</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1753606914189</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +153,7 @@
     <MESSAGE value="Updated gitignore" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Much needed cleanup, and tracking which cars have been checked for oil - which resets when removing the dipstick" />
-    <option name="LAST_COMMIT_MESSAGE" value="Much needed cleanup, and tracking which cars have been checked for oil - which resets when removing the dipstick" />
+    <MESSAGE value="Fixed an issue with the oil level disappearing on right-clicking the dip stick." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed an issue with the oil level disappearing on right-clicking the dip stick." />
   </component>
 </project>
