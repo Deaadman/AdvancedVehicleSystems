@@ -1,0 +1,52 @@
+module EngineOil
+{
+    item Dipstick1
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName	= Dipstick,
+        Icon = Dishtowel,
+        VehicleType = 1,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 30,
+        MechanicsItem = TRUE,
+        WorldStaticModel = DishTowelWet,
+    }
+    item Dipstick2
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName	= Dipstick,
+        Icon = Dishtowel,
+        VehicleType = 2,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 30,
+        MechanicsItem = TRUE,
+        WorldStaticModel = DishTowelWet,
+    }
+    item Dipstick3
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName	= Dipstick,
+        Icon = Dishtowel,
+        VehicleType = 3,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 30,
+        MechanicsItem = TRUE,
+        WorldStaticModel = DishTowelWet,
+    }
+    item OilFilter
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName	= Oil Filter,
+        Icon = Dishtowel,
+        MechanicsItem = TRUE,
+        WorldStaticModel = DishTowelWet,
+    }
+}
